@@ -14,7 +14,7 @@ import kotlin.coroutines.CoroutineContext
 
 
 @AndroidEntryPoint
-class SplashFragment : BaseFragment<FragmentSplashBinding>(),CoroutineScope {
+class SplashFragment : BaseFragment<FragmentSplashBinding>(), CoroutineScope {
 
     override val coroutineContext: CoroutineContext
         get() = Dispatchers.Main + Job()
@@ -28,6 +28,7 @@ class SplashFragment : BaseFragment<FragmentSplashBinding>(),CoroutineScope {
         }
 
     }
+
     override fun initBinding(
         inflater: LayoutInflater,
         container: ViewGroup?

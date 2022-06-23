@@ -26,6 +26,9 @@ android {
     }
 
     buildTypes {
+        debug {
+            buildConfigField("String","API_KEY","\"GpaAWioxfKujyRzgLjcKmVdaVHAMNlfm\"")
+        }
         release {
             isMinifyEnabled = false
             proguardFiles(
@@ -92,6 +95,11 @@ dependencies {
     androidTestImplementation(Dependencies.Test.espresso)
     androidTestImplementation("com.google.truth:truth:1.1.3")
     testImplementation("com.google.truth:truth:1.1.3")
+
+    //Paging
+    implementation ("androidx.paging:paging-runtime-ktx:3.1.1")
+
+    implementation ("com.github.bumptech.glide:glide:4.13.0")
 
     androidTestImplementation ("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.6.0")
 

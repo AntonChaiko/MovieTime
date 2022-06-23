@@ -9,13 +9,12 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".ui.fragments.splashfragment.SplashFragment">
+        tools:context=".ui.fragments.moviesfragment.MoviesFragment">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:textSize="100sp"
-            android:text="SPLASH" />
+            android:text="Hello" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
